@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+}
+/*setting height and centering for the containers*/
+ html, body, .container1, .column1{
+    height: 100vh;
+    min-width: 270px;
+    margin: 0 auto;
+}
+
+/* styling the input field */
+#inputField{
+    width: 70%;
+    height: 50px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#noTask {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
+    color: rgb(95, 95, 95);
+}
+
+/* styling the add button */
+#addBtn{
+  height: 50px;
+}
+
+/*Styling the header*/
+#header{
+    background-color: rgb(157, 201, 241);
+    padding: 50px 15px 20px 15px;
+    text-align: center;
+
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+/* styling all h2 elements */
+h2{
+  margin-bottom: 10px;
+}
+
+.column1{
+    box-shadow: 0 0 4px;
+    background-color:lightgrey;
+    padding: 0;
+}
+
+/* styling the list elements */
+.toDoItem{
+    background-color: white;
+    padding: 10px 0 10px 20px;
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.complete{
+    text-decoration: line-through;
+}
+
+/* capitalise first letter of each list item */
+ .toDoItem::first-letter{
+    text-transform: capitalize;
+}
+
+/* styling the delete button  */
+.delBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius:0 5px 5px 0 ;
+    width: 50px;
+    height: 100%;
+    background-color: rgb(194, 3, 3);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.delBtn:hover{
+  background-color: rgb(134, 0, 0);
+}
+
+.fa-regular{
+    font-size: 20px;
+}
+
+/* making the cursor a pointer */
+.toDoItem, .delBtn{
+    cursor: pointer;
+}
+
+/* making h2 and add button text unselectable */
+h2, #addbtn, .delBtn{
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
